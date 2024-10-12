@@ -1,4 +1,5 @@
 import express from "express";
+import router from './routes/todos.js';
 
 const app = express();
 
@@ -12,3 +13,5 @@ app.get("/", (req, res) => {
 app.listen(port, () => {
     console.log(`Listening to port ${port}`);
 });
+
+app.use('/api', router);
