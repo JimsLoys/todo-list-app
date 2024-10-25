@@ -2,11 +2,11 @@ import mongoose from "mongoose";
 
 export default function connect() {
   const database =
-    "mongodb+srv://deocampoken5:cCY8leXtN8QWfXqW@todocluster.ee72w.mongodb.net/?retryWrites=true&w=majority&appName=TodoCluster";
+    "mongodb+srv://deocampoken5:BbGhQIObctiEi0Tj@todocluster.ee72w.mongodb.net/?retryWrites=true&w=majority&appName=TodoCluster";
+  
+
   mongoose
     .connect(database, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
       dbName: "todos",
     })
     .then(() => {
